@@ -1,0 +1,26 @@
+---
+title: Manifesto
+timezone: America/New_York
+collections:
+defaults:
+- scope:
+    path: ''
+  values:
+    image: 
+    layout: index
+url: http://manifesto.justinjay.wang
+description: A display typeface inspired by Ken Garland’s 1964 First Things First manifesto.
+permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+sass:
+  sass_dir: assets/styles/
+  style: compressed
+repository: justinjaywang/manifesto
+google_analytics: UA-15132368-13
