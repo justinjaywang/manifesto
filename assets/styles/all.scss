@@ -22,17 +22,14 @@
 html {
   @include box-sizing(border-box);
   font-size: $font-size--html;
-  // @include max-width($max-width--sm) {
-  //   font-size: $font-size--html-sm;
-  // }
 }
 body {
   font-family: $font-family--sans-serif;
   line-height: $line-height--base;
-  @include antialias;
   overflow-x: hidden;
   color: $color--black;
   background: $color--white;
+  width: 100%;
 }
 a {
   color: inherit;
@@ -43,49 +40,21 @@ a {
 }
 @include selection {
   color: $color--white;
-  background: $color--blue;
+  background: $color--black;
 }
-
-// grid
-// ----
-
-.container {
-  width: 100%;
-  @include margin-center;
-  padding-left: $gutter;
-  padding-right: $gutter;
+.about {
+  max-width: 24rem;
+  padding: $gutter $gutter 0;
+  margin-bottom: $v*2;
 }
-.row {
-  margin-left: -$gutter/2;
-  margin-right: -$gutter/2;
-  @include flexbox;
-  @include flex-wrap(wrap);
-}
-.col {
-  padding-left: $gutter/2;
-  padding-right: $gutter/2;
-}
-
-// content
-// -------
-
-.main {
-  margin-top: $v;
+p {
   margin-bottom: $v;
 }
-.info {
-  margin-bottom: $v;
-}
-textarea {
-  @include appearance(none);
-  outline: none;
-  padding: 0;
-  border: 0;
-  resize: none;
-  color: inherit;
-  background: inherit;
-  width: 100%;
-  font-size: 18em;
+.sample {
+  padding: $gutter*2 $gutter;
+  margin-bottom: $v*2;
+  font-size: $font-size--huge;
   font-family: $font-family--manifesto;
-  // background: #eee; // TEMP
+  line-height: $line-height--tight;
+  outline: none;
 }
