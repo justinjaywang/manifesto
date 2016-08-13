@@ -1,8 +1,8 @@
 // colors
 // ------
 
-$color--black: #222;
-$color--white: #fff;
+$color--fg: #f6f6f6;
+$color--bg: #111;
 
 // typography
 // ----------
@@ -26,3 +26,4 @@ $v: $line-height--base * 1rem;
 
 $gutter: 1.5rem;
 
+$opacity--faded: 0.6;
