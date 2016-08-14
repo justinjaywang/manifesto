@@ -9,7 +9,8 @@ $color--bg: #111;
 
 $font-size--html: 16px;
 
-$font-size--huge: 18em;
+$font-size--huge:  18em;
+$font-size--large: 9em;
 
 $font-family--sans-serif: sans-serif;
 $font-family--manifesto:  "Manifesto", sans-serif;
@@ -21,6 +22,9 @@ $line-height--base:  1.4;
 
 // sizing and spacing
 // ------------------
+
+$min-width--md: 720px;
+$max-width--sm: ($min-width--md - 1);
 
 $v: $line-height--base * 1rem;
 

@@ -52,8 +52,11 @@ p {
 .sample {
   padding: $gutter*2 $gutter;
   margin-bottom: $v*2;
-  font-size: $font-size--huge;
   font-family: $font-family--manifesto;
+  font-size: $font-size--huge;
+  @include max-width($max-width--sm) {
+    font-size: $font-size--large;
+  }
   line-height: $line-height--tight;
   outline: none;
 }
