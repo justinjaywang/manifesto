@@ -11,12 +11,14 @@
     <link rel="canonical" href="{{ site.url }}" />
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ site.url }}/assets/website.png" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "WebSite",
         "name": "{{ site.title }}",
         "headline": "{{ site.title }}",
+        "image": "{{ site.url }}/assets/website.png",
         "description": "{{ site.description }}",
         "url": "{{ site.url }}"
       }
