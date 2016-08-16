@@ -24,3 +24,7 @@ sass:
   style: compressed
 repository: justinjaywang/manifesto
 google_analytics: UA-15132368-13
+gems:
+- jekyll-seo-tag
+twitter:
+  username: justinjaywang
