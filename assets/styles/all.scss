@@ -27,20 +27,19 @@ body {
   font-family: $font-family--sans-serif;
   line-height: $line-height--base;
   overflow-x: hidden;
-  color: $color--black;
-  background: $color--white;
+  color: $color--fg;
+  background: $color--bg;
   width: 100%;
 }
 a {
   color: inherit;
-  text-decoration: underline;
   &:hover {
-    text-decoration: none;
+    opacity: $opacity--faded;
   }
 }
 @include selection {
-  color: $color--white;
-  background: $color--black;
+  color: $color--bg;
+  background: $color--fg;
 }
 .about {
   max-width: 24rem;
@@ -53,8 +52,11 @@ p {
 .sample {
   padding: $gutter*2 $gutter;
   margin-bottom: $v*2;
-  font-size: $font-size--huge;
   font-family: $font-family--manifesto;
+  font-size: $font-size--huge;
+  @include max-width($max-width--sm) {
+    font-size: $font-size--large;
+  }
   line-height: $line-height--tight;
   outline: none;
 }
